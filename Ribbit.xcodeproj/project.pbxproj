@@ -65,6 +65,8 @@
 		66AA911D19182EB80099D1D6 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA911C19182EB80099D1D6 /* ImageViewController.m */; };
 		66AA911F191837710099D1D6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA911E191837710099D1D6 /* MediaPlayer.framework */; };
 		66AA912119183A120099D1D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA912019183A120099D1D6 /* AVFoundation.framework */; };
+		66DEEF33191D4FDF004F9200 /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DEEF30191D4FDF004F9200 /* MSCellAccessory.m */; };
+		66DEEF34191D4FDF004F9200 /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DEEF32191D4FDF004F9200 /* UIView+AccessViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +151,10 @@
 		66AA911C19182EB80099D1D6 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		66AA911E191837710099D1D6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		66AA912019183A120099D1D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66DEEF2F191D4FDF004F9200 /* MSCellAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCellAccessory.h; sourceTree = "<group>"; };
+		66DEEF30191D4FDF004F9200 /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
+		66DEEF31191D4FDF004F9200 /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
+		66DEEF32191D4FDF004F9200 /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,11 +239,12 @@
 		662819A81910445B008311E9 /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				66DEEF2E191D4FDF004F9200 /* MSCellAccessory */,
+				662819D119104488008311E9 /* MainStoryboard.storyboard */,
 				668515A7191D32A500E49807 /* TPKeyboardAvoidingScrollView.h */,
 				668515A8191D32A500E49807 /* TPKeyboardAvoidingScrollView.m */,
 				668515AA191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
 				668515AB191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
-				662819D119104488008311E9 /* MainStoryboard.storyboard */,
 				66AA911B19182EB80099D1D6 /* ImageViewController.h */,
 				66AA911C19182EB80099D1D6 /* ImageViewController.m */,
 				6619F1781911865300CE8A31 /* EditFriendsTableViewController.h */,
@@ -318,6 +325,17 @@
 				662819D819104649008311E9 /* inbox@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		66DEEF2E191D4FDF004F9200 /* MSCellAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				66DEEF2F191D4FDF004F9200 /* MSCellAccessory.h */,
+				66DEEF30191D4FDF004F9200 /* MSCellAccessory.m */,
+				66DEEF31191D4FDF004F9200 /* UIView+AccessViewController.h */,
+				66DEEF32191D4FDF004F9200 /* UIView+AccessViewController.m */,
+			);
+			path = MSCellAccessory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,8 +460,10 @@
 			files = (
 				662819F91911478D008311E9 /* LogInViewController.m in Sources */,
 				668515A9191D32A500E49807 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				66DEEF34191D4FDF004F9200 /* UIView+AccessViewController.m in Sources */,
 				6670EFB61912855B00650C15 /* CameraViewController.m in Sources */,
 				662819FC1911479C008311E9 /* SignUpViewController.m in Sources */,
+				66DEEF33191D4FDF004F9200 /* MSCellAccessory.m in Sources */,
 				6619F17A1911865300CE8A31 /* EditFriendsTableViewController.m in Sources */,
 				668515AC191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				662819E219104CDC008311E9 /* InboxTableViewController.m in Sources */,

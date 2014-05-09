@@ -19,6 +19,9 @@
 
     [NSThread sleepForTimeInterval:1.5]; // *** Delay for 1.5 seconds to show default screen longer
 
+
+    [self customizeUserInterface];
+
     
     return YES;
 }
@@ -48,6 +51,44 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - helper methods
+
+- (void) customizeUserInterface {
+
+    // *** set image as background color since there is opacity
+    // [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.553 green:0.435 blue:0.718 alpha:1.0]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navBarBackground"] forBarMetrics:UIBarMetricsDefault];
+
+    // *** set all nav bar title text to white
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName, nil]];
+
+    // *** set all nav bar text to white (i.e. buttons)
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
+
+    // *** this doesn't work and neither does the attribute in Story Board! ?
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+
+    UITabBarController *tabBarController = (UITabBarController *) self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+
+    UITabBarItem *tabInbox = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabFriends = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabCamera = [tabBar.items objectAtIndex:2];
+
+    // *** setFinishedSelectedImage is depreciated TODO: Need to find a fix for this
+    UIImage *inboxImage = [UIImage imageNamed:@"inbox"];
+    tabInbox.image = inboxImage;
+
+
+
+
+
+
+
+
 }
 
 @end
