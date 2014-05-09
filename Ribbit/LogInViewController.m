@@ -20,8 +20,16 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.hidesBackButton = YES;
-    
+//    self.navigationItem.hidesBackButton = YES;
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    [self.navigationController setNavigationBarHidden:YES];
+
 }
 
 - (IBAction)login:(id)sender {

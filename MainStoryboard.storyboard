@@ -298,6 +298,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcA-tx-zy8">
+                                <rect key="frame" x="256" y="66" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_x.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="4da-ft-0ID" eventType="touchUpInside" id="nVo-5s-tL3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -373,6 +383,7 @@
     <resources>
         <image name="camera.png" width="33" height="24"/>
         <image name="friends.png" width="40" height="24"/>
+        <image name="icon_x.png" width="11" height="11"/>
         <image name="inbox.png" width="32" height="21"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
