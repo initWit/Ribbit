@@ -17,6 +17,8 @@
     [Parse setApplicationId:@"88740RWFfmZqEMGPgVKqXRk58bok5uAixuOCf1lh"
                   clientKey:@"QXWedKufegOPq8yNfMK6YgGvC80EL9XzqfMlYl9D"];
 
+    [NSThread sleepForTimeInterval:1.5]; // *** Delay for 1.5 seconds to show default screen longer
+
     
     return YES;
 }
