@@ -15,4 +15,6 @@
 
 - (IBAction)login:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
 @end

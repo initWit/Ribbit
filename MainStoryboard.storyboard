@@ -207,7 +207,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-v7-AHr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-v7-AHr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -237,14 +237,14 @@
                                     <action selector="login:" destination="Nxc-ao-7gC" eventType="touchUpInside" id="boZ-hn-EWU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDh-gM-4nF">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDh-gM-4nF">
                                 <rect key="frame" x="48" y="454" width="188" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4g-2x-4bD">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4g-2x-4bD">
                                 <rect key="frame" x="190" y="450" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -259,12 +259,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="tDh-gM-4nF" secondAttribute="bottom" constant="5" id="4uX-YC-WZ0"/>
+                            <constraint firstAttribute="trailing" secondItem="c4g-2x-4bD" secondAttribute="trailing" constant="48" id="H8g-mA-c9w"/>
+                            <constraint firstItem="tDh-gM-4nF" firstAttribute="leading" secondItem="9XD-yj-gM2" secondAttribute="leading" constant="48" id="Vrq-8c-aha"/>
                             <constraint firstAttribute="bottom" secondItem="c4g-2x-4bD" secondAttribute="bottom" id="hZU-cs-j4e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ribbit" id="jYR-Hf-S8Z"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="vuL-v7-AHr" id="1MX-Yq-Abz"/>
                         <outlet property="passwordField" destination="qIh-2P-rIJ" id="AHf-A0-a0O"/>
                         <outlet property="usernameField" destination="Dtv-X3-3gZ" id="j6m-lo-9bG"/>
                     </connections>
@@ -285,8 +288,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="X5F-bl-0s5">
-                                <rect key="frame" x="0.0" y="-3" width="320" height="571"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="X5F-bl-0s5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eeJ-fN-BU2">
@@ -339,6 +342,7 @@
                     <navigationItem key="navigationItem" title="Ribbit" id="Xgq-9i-edc"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="X5F-bl-0s5" id="bmp-L2-Oa8"/>
                         <outlet property="emailField" destination="1aV-IW-wRq" id="CZZ-EU-j37"/>
                         <outlet property="passwordField" destination="vLS-r7-4b3" id="Wi8-2M-x2L"/>
                         <outlet property="usernameField" destination="eeJ-fN-BU2" id="5j8-NK-vLP"/>

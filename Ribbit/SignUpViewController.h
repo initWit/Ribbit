@@ -16,4 +16,5 @@
 - (IBAction)signUp:(id)sender;
 - (IBAction)dismiss:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @end
