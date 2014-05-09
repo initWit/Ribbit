@@ -42,6 +42,8 @@
 		662819F91911478D008311E9 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662819F81911478D008311E9 /* LogInViewController.m */; };
 		662819FC1911479C008311E9 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662819FB1911479C008311E9 /* SignUpViewController.m */; };
 		6670EFB61912855B00650C15 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6670EFB51912855B00650C15 /* CameraViewController.m */; };
+		668515A9191D32A500E49807 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 668515A8191D32A500E49807 /* TPKeyboardAvoidingScrollView.m */; };
+		668515AC191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 668515AB191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		669F0946191D153A00B9D915 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 669F0938191D153A00B9D915 /* Default-568h@2x.png */; };
 		669F0947191D153A00B9D915 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 669F0939191D153A00B9D915 /* Default.png */; };
 		669F0948191D153A00B9D915 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 669F093A191D153A00B9D915 /* Default@2x.png */; };
@@ -121,6 +123,10 @@
 		662819FB1911479C008311E9 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		6670EFB41912855B00650C15 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		6670EFB51912855B00650C15 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		668515A7191D32A500E49807 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		668515A8191D32A500E49807 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		668515AA191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		668515AB191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		669F0938191D153A00B9D915 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		669F0939191D153A00B9D915 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		669F093A191D153A00B9D915 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -227,6 +233,10 @@
 		662819A81910445B008311E9 /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				668515A7191D32A500E49807 /* TPKeyboardAvoidingScrollView.h */,
+				668515A8191D32A500E49807 /* TPKeyboardAvoidingScrollView.m */,
+				668515AA191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				668515AB191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 				662819D119104488008311E9 /* MainStoryboard.storyboard */,
 				66AA911B19182EB80099D1D6 /* ImageViewController.h */,
 				66AA911C19182EB80099D1D6 /* ImageViewController.m */,
@@ -431,9 +441,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				662819F91911478D008311E9 /* LogInViewController.m in Sources */,
+				668515A9191D32A500E49807 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				6670EFB61912855B00650C15 /* CameraViewController.m in Sources */,
 				662819FC1911479C008311E9 /* SignUpViewController.m in Sources */,
 				6619F17A1911865300CE8A31 /* EditFriendsTableViewController.m in Sources */,
+				668515AC191D350600E49807 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				662819E219104CDC008311E9 /* InboxTableViewController.m in Sources */,
 				662819B31910445B008311E9 /* AppDelegate.m in Sources */,
 				66AA911D19182EB80099D1D6 /* ImageViewController.m in Sources */,

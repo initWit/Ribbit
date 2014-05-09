@@ -26,6 +26,12 @@
         self.backgroundImageView.image = [UIImage imageNamed:@"loginBackground-568h"];
     }
 
+// *** replaced by functionality in TPKeyboardAvoidingScrollView
+
+//    self.usernameField.delegate = self;
+//    self.passwordField.delegate = self;
+//    self.emailField.delegate = self;
+
 }
 
 
@@ -66,4 +72,15 @@
     [self.navigationController popViewControllerAnimated:YES];
     
 }
+
+// *** replaced by functionality in TPKeyboardAvoidingScrollView
+
+//#pragma mark - UITextField Delegate Methods
+//
+//- (BOOL) textFieldShouldReturn:(UITextField *)textField { // *** called when return key is pressed
+//
+//    [textField resignFirstResponder]; // *** this indirectly dismisses the keyboard (by resigning focus)
+//    return YES;
+//    
+//}
 @end

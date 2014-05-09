@@ -211,7 +211,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u3z-Ih-CCl">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3z-Ih-CCl" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
@@ -258,9 +258,11 @@
                                     <constraint firstItem="AgJ-77-M87" firstAttribute="leading" secondItem="u3z-Ih-CCl" secondAttribute="leading" constant="40" id="2c4-4Y-CJi"/>
                                     <constraint firstAttribute="trailing" secondItem="AgJ-77-M87" secondAttribute="trailing" constant="40" id="9eV-f7-ini"/>
                                     <constraint firstAttribute="trailing" secondItem="Dtv-X3-3gZ" secondAttribute="trailing" constant="20" id="COL-Zc-vhE"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AgJ-77-M87" secondAttribute="bottom" constant="4" id="Plp-pz-ucI"/>
                                     <constraint firstItem="qIh-2P-rIJ" firstAttribute="leading" secondItem="u3z-Ih-CCl" secondAttribute="leading" constant="20" id="TlL-ze-7i9"/>
                                     <constraint firstAttribute="centerY" secondItem="qIh-2P-rIJ" secondAttribute="centerY" id="XC1-Di-lkD"/>
                                     <constraint firstItem="AgJ-77-M87" firstAttribute="top" secondItem="qIh-2P-rIJ" secondAttribute="bottom" constant="2" id="XKk-xL-Vuc"/>
+                                    <constraint firstAttribute="bottom" secondItem="AgJ-77-M87" secondAttribute="bottom" priority="1" constant="4" id="c7l-13-NP5"/>
                                     <constraint firstItem="qIh-2P-rIJ" firstAttribute="top" secondItem="Dtv-X3-3gZ" secondAttribute="bottom" constant="2" id="dUZ-km-dcE"/>
                                     <constraint firstAttribute="trailing" secondItem="qIh-2P-rIJ" secondAttribute="trailing" constant="20" id="hMR-py-3NL"/>
                                     <constraint firstItem="Dtv-X3-3gZ" firstAttribute="leading" secondItem="u3z-Ih-CCl" secondAttribute="leading" constant="20" id="ugi-2i-Mjd"/>
@@ -329,7 +331,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wr-2V-y4S">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wr-2V-y4S" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
@@ -388,7 +390,9 @@
                                     <constraint firstAttribute="trailing" secondItem="lE0-x3-5Dl" secondAttribute="trailing" constant="40" id="FkM-RV-qJ1"/>
                                     <constraint firstItem="1aV-IW-wRq" firstAttribute="leading" secondItem="8Wr-2V-y4S" secondAttribute="leading" constant="20" id="GBU-z9-0mR"/>
                                     <constraint firstItem="vLS-r7-4b3" firstAttribute="leading" secondItem="8Wr-2V-y4S" secondAttribute="leading" constant="20" id="IEO-qM-G50"/>
+                                    <constraint firstAttribute="bottom" secondItem="lE0-x3-5Dl" secondAttribute="bottom" priority="1" constant="4" id="Lle-eV-e7i"/>
                                     <constraint firstItem="1aV-IW-wRq" firstAttribute="top" secondItem="vLS-r7-4b3" secondAttribute="bottom" constant="2" id="Ndx-lX-4sK"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lE0-x3-5Dl" secondAttribute="bottom" constant="4" id="Nt1-5g-FLs"/>
                                     <constraint firstAttribute="trailing" secondItem="eeJ-fN-BU2" secondAttribute="trailing" constant="20" id="Onf-ZP-IbH"/>
                                     <constraint firstItem="vLS-r7-4b3" firstAttribute="top" secondItem="eeJ-fN-BU2" secondAttribute="bottom" constant="2" id="Piu-dg-hRg"/>
                                     <constraint firstItem="lE0-x3-5Dl" firstAttribute="leading" secondItem="8Wr-2V-y4S" secondAttribute="leading" constant="40" id="U7F-Lo-rWJ"/>
